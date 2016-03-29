@@ -1,0 +1,139 @@
+/* Schedule & Prices
+--------------------------------------------- */
+table {
+	line-height: 1.5;
+}
+
+.rt-table {
+	border-collapse: separate;
+	border-spacing: 5px;
+}
+
+.responsive-table-shortcode-wrap {
+	th, td {
+		border: none;
+		text-align: center;
+	}
+	
+	tr,
+	tr:nth-of-type(odd) {
+		background: #fff;
+	}
+	
+	tr th:first-child {
+		padding: 0;
+	}
+	
+	th,
+	tr td:first-child {
+		background: #002868;
+		color: #fff;
+		font-weight: 600;
+	}
+	
+	
+}
+
+.prices-widgets {
+	background: $color-blue;
+	height: auto;
+	margin-right: 0 !important;
+	padding: 20px 20px;
+	
+	.widget-title {
+		border-bottom: 1.5px solid #fff;
+		color: #fff;
+		font-family: $font-sans-sec;
+		font-size: 23px;
+		
+		&:before {
+			background-image: url(images/cuban-flag-triangle.svg);
+			content: "";
+			display: inline-block;
+			height: 25px;
+			margin-right: 5px;
+			width: 25px;
+			
+		}
+	}
+	
+	a {
+		color: $color-blue;
+		background: #fff;
+		padding: 10px;
+		-webkit-transition: all 0.1s ease-in-out;
+		transition: all 0.1s ease-in-out;
+		
+		&:hover {
+			color: #fff;
+			background: $color-red;
+		}
+	}
+	
+	p {
+		margin: 0;
+	}
+}
+
+#textbox {
+	padding-bottom: 10px;
+	
+	p {
+		color: #fff;
+		margin: 0 0 5px;
+	}
+	
+	.alignleft {
+		float: left;
+	}
+	.alignright {
+		float: right;
+	}
+}
+
+.prices-table {
+	margin-bottom: 0;
+	
+	tr,
+	tr:nth-of-type(odd) {
+		background: transparent;
+	}
+	
+	tr {
+		color: #fff;
+		
+		td {
+			border: none;
+		}
+		
+		td:nth-child(2) {
+			text-align: right;
+		}
+	}
+}
+
+/* Contact Page
+--------------------------------------------- */
+.contact a {
+	color: coral;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.ninja-forms-req-symbol {
+	color: #000 !important;
+}
+
+/* Class description
+--------------------------------------------- */
+h3.accordion-header.accordion-default-colors {
+	background: $color-blue;
+	color: #fff;
+	
+	&:hover {
+		background: $color-red;
+		color: #fff;
+	}
+}

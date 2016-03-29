@@ -1,0 +1,131 @@
+.front-page-top {
+	padding-top: 90px;
+	
+	.wrap {
+		padding: 0 4em;
+	}
+	
+	.widget-title{
+		color: #fff;
+		font-size: 3em;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	
+	.one-half,
+	.one-third,
+	.two-third,
+	.one-fourth,
+	.three-fourth,
+	.one-fifth,
+	.two-fifth,
+	.three-fifth,
+	.four-fifth,
+	.one-sixth,
+	.five-sixth {
+		margin-right: 0;
+	}
+	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: #fff;
+		font-family: $font-sans;
+	}
+	
+	h1 {
+		font-size: 3em;
+		font-weight: 700;
+	}
+	
+	a {
+		background-color: #fff;
+		color: #000;
+		padding: 6px;
+	}
+	
+	a:hover {
+		background-color: #000;
+		color: #fff;
+	}
+}
+
+.front-page-middle-columns {
+	background: $color-blue;
+	height: 460px;
+	margin-right: 0 !important;
+	padding: 20px 20px 0;
+	
+	.widget-title {
+		border-bottom: 1.5px solid #fff;
+		color: #fff;
+		font-family: $font-sans-sec;
+		font-size: 23px;
+		
+		&:before {
+			background-image: url(images/cuban-flag-triangle.svg);
+			content: "";
+			display: inline-block;
+			height: 25px;
+			margin-right: 5px;
+			width: 25px;
+			
+		}
+	}
+	
+	.featured-content .entry {
+		margin-bottom: 10px;
+	}
+	
+	.entry-title a {
+		font-family: $font-sans;
+		font-weight: 700;
+	}
+	
+	.entry-title a:hover {
+		text-decoration: underline;
+	}
+}
+
+.one-third.front-page-middle-columns.column-one,
+.one-third.front-page-middle-columns.column-three {
+	.entry-title {
+		text-align: center;
+		
+		a {
+			color: #fff;
+		}
+	}
+}
+
+.one-third.front-page-middle-columns.column-two {
+	.featured-content .entry {
+		background: #fff;
+		padding: 10px;
+	}
+	
+	.entry-title a,
+	.entry-title a:hover,
+	.entry-content,
+	.more-link {
+		color: $color-blue;
+	}
+	
+	.more-link {
+		background: $color-blue;
+		color: #fff;
+		padding: 3px;
+		
+		&:hover {
+			background: #CE1126;
+		}
+	}
+	
+	p {
+		margin: 0;
+	}
+	
+}

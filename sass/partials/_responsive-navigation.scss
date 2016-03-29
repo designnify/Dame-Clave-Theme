@@ -1,0 +1,19 @@
+.responsive-menu-icon {
+	cursor: pointer;
+	display: none;
+	float: right;
+	margin: 12px 0 65px;
+	text-align: center;
+}
+ 
+.responsive-menu-icon::before {
+	color: #fff;
+	content: "\f333";
+	display: inline-block;
+	font: normal 30px/1 'dashicons';
+	margin: 0 auto;
+	padding: 10px;
+}
+.nav-primary .responsive-menu-icon::before {
+	color: #fff;
+}

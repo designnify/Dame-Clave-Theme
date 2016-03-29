@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(0.108696,0,0,0.108696,-6.74088,-46.4151)">
+        <g id="Capa1">
+            <g id="Triangle-Star">
+                <g transform="matrix(1.19671e-16,1,-1.23859,1.74034e-17,682.904,364.991)">
+                    <path d="M108.016,427.007L154.004,501.285L62.029,501.285L108.016,427.007Z" style="fill:rgb(206,17,38);"/>
+                </g>
+                <g transform="matrix(0.883623,0,3.08149e-33,0.883623,50.8787,184.121)">
+                    <path d="M48.657,306.555L53.104,320.24L67.493,320.24L55.852,328.697L60.298,342.382L48.657,333.925L37.016,342.382L41.463,328.697L29.822,320.24L44.211,320.24L48.657,306.555Z" style="fill:white;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

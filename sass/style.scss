@@ -1,0 +1,164 @@
+/*
+	Theme Name: Dame Clave
+	Description: This is a custome theme created for the Genesis Framework.
+	Author: StudioPress
+	Author URI: http://designnify.com/
+	Version: 2.0.1
+
+	Tags: black, orange, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+
+	Template: genesis
+	Template Version: 2.0.1
+
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+
+/* Table of Contents
+
+	- HTML5 Reset
+		- Baseline Normalize
+		- Box Sizing
+		- Float Clearing
+	- Defaults
+		- Typographical Elements
+		- Headings
+		- Objects
+		- Forms
+		- Tables
+	- Structure and Layout
+		- Site Containers
+		- Column Widths and Positions
+		- Column Classes
+	- Common Classes
+		- WordPress
+		- Genesis
+		- Titles
+	- Widgets
+		- Featured Content
+		- Front Page Widgets
+	- Plugins
+		- Genesis eNews Extended
+		- Genesis Latest Tweets
+		- Gravity Forms
+		- Jetpack
+	- Site Header
+		- Title Area
+		- Widget Area
+	- Site Navigation
+		- Header Navigation
+		- Primary Navigation
+		- Secondary Navigation
+		- Responsive Navigation
+	- Content Area
+		- Entries
+		- Pagination
+		- Comments
+	- Pages
+	- Sidebars
+	- Footer Widgets
+	- Site Footer
+	- Media Queries
+		- max-width: 1139px
+		- max-width: 1023px
+		- max-width: 767px
+
+*/
+
+@import "partials/variables";
+@import "partials/mixins";
+
+/*
+HTML5 Reset
+---------------------------------------------------------------------------------------------------- */
+@import "partials/reset";
+
+
+/*
+Defaults
+---------------------------------------------------------------------------------------------------- */
+@import "partials/defaults";
+
+
+/*
+Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+@import "partials/structure-layout";
+
+
+/*
+Common Classes
+---------------------------------------------------------------------------------------------------- */
+@import "partials/common-classes";
+
+
+/*
+Widgets
+---------------------------------------------------------------------------------------------------- */
+@import "partials/widgets";
+@import "partials/front-page-widgets";
+
+
+/*
+Plugins
+---------------------------------------------------------------------------------------------------- */
+@import "partials/plugins";
+
+
+/* Gravity Forms
+--------------------------------------------- */
+@import "partials/gravity-forms";
+
+
+/* Jetpack
+--------------------------------------------- */
+@import "partials/jetpack";
+
+
+/*
+Site Header
+---------------------------------------------------------------------------------------------------- */
+@import "partials/site-header";
+
+
+/*
+Site Navigation
+---------------------------------------------------------------------------------------------------- */
+@import "partials/site-navigation";
+@import "partials/responsive-navigation";
+
+
+/*
+Content Area
+---------------------------------------------------------------------------------------------------- */
+@import "partials/content-area";
+
+
+/*
+Pages
+---------------------------------------------------------------------------------------------------- */
+@import "partials/pages";
+
+
+/*
+Sidebars
+---------------------------------------------------------------------------------------------------- */
+@import "partials/sidebars";
+
+/*
+Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+@import "partials/footer-widgets";
+
+
+/*
+Site Footer
+---------------------------------------------------------------------------------------------------- */
+@import "partials/site-footer";
+
+
+/*
+Media Queries
+---------------------------------------------------------------------------------------------------- */
+@import "partials/media-queries";
