@@ -1527,28 +1527,29 @@ table {
       border: none; }
     /* line 109, sass/partials/_pages.scss */
     .prices-table tr td:nth-child(2) {
-      text-align: right; }
+      text-align: right;
+      font-weight: 700; }
 
 /* Contact Page
 --------------------------------------------- */
-/* line 117, sass/partials/_pages.scss */
+/* line 118, sass/partials/_pages.scss */
 .contact a {
   color: coral; }
-  /* line 120, sass/partials/_pages.scss */
+  /* line 121, sass/partials/_pages.scss */
   .contact a:hover {
     text-decoration: underline; }
 
-/* line 125, sass/partials/_pages.scss */
+/* line 126, sass/partials/_pages.scss */
 .ninja-forms-req-symbol {
   color: #000 !important; }
 
 /* Class description
 --------------------------------------------- */
-/* line 131, sass/partials/_pages.scss */
+/* line 132, sass/partials/_pages.scss */
 h3.accordion-header.accordion-default-colors {
   background: #002868;
   color: #fff; }
-  /* line 135, sass/partials/_pages.scss */
+  /* line 136, sass/partials/_pages.scss */
   h3.accordion-header.accordion-default-colors:hover {
     background: #CE1126;
     color: #fff; }
