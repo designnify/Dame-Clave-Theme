@@ -3,7 +3,7 @@
 
 .entry {
 	margin-bottom: 40px;
-	padding: 50px 60px;
+	padding: 0 60px;
 }
 
 .content .entry {
@@ -33,6 +33,16 @@
 	code {
 		background-color: #000;
 		color: #ddd;
+	}
+	
+	.read-more {
+		background: $color-blue;
+		color: #fff;
+		padding: 5px 10px;
+		
+		&:hover {
+			background: $color-red;
+		}
 	}
 }
 

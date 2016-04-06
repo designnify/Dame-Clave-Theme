@@ -494,7 +494,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-  background-color: #000;
+  background-color: #002868;
   border: 0;
   color: #fff;
   cursor: pointer;
@@ -934,28 +934,22 @@ Widgets
     font-size: 3em;
     font-weight: 700; }
   /* line 44, sass/partials/_front-page-widgets.scss */
-  .front-page-top a {
-    background-color: #fff;
-    color: #000;
-    padding: 6px; }
-  /* line 50, sass/partials/_front-page-widgets.scss */
-  .front-page-top a:hover {
-    background-color: #000;
-    color: #fff; }
+  .front-page-top .button {
+    padding: 10px 24px; }
 
-/* line 56, sass/partials/_front-page-widgets.scss */
+/* line 49, sass/partials/_front-page-widgets.scss */
 .front-page-middle-columns {
   background: #002868;
   height: 460px;
   margin-right: 0 !important;
   padding: 20px 20px 0; }
-  /* line 62, sass/partials/_front-page-widgets.scss */
+  /* line 55, sass/partials/_front-page-widgets.scss */
   .front-page-middle-columns .widget-title {
     border-bottom: 1.5px solid #fff;
     color: #fff;
     font-family: Oswald, sans-serif;
     font-size: 23px; }
-    /* line 68, sass/partials/_front-page-widgets.scss */
+    /* line 61, sass/partials/_front-page-widgets.scss */
     .front-page-middle-columns .widget-title:before {
       background-image: url(images/cuban-flag-triangle.svg);
       content: "";
@@ -963,45 +957,45 @@ Widgets
       height: 25px;
       margin-right: 5px;
       width: 25px; }
-  /* line 79, sass/partials/_front-page-widgets.scss */
+  /* line 72, sass/partials/_front-page-widgets.scss */
   .front-page-middle-columns .featured-content .entry {
     margin-bottom: 10px; }
-  /* line 83, sass/partials/_front-page-widgets.scss */
+  /* line 76, sass/partials/_front-page-widgets.scss */
   .front-page-middle-columns .entry-title a {
     font-family: "Open Sans", sans-serif;
     font-weight: 700; }
-  /* line 88, sass/partials/_front-page-widgets.scss */
+  /* line 81, sass/partials/_front-page-widgets.scss */
   .front-page-middle-columns .entry-title a:hover {
     text-decoration: underline; }
 
-/* line 95, sass/partials/_front-page-widgets.scss */
+/* line 88, sass/partials/_front-page-widgets.scss */
 .one-third.front-page-middle-columns.column-one .entry-title,
 .one-third.front-page-middle-columns.column-three .entry-title {
   text-align: center; }
-  /* line 98, sass/partials/_front-page-widgets.scss */
+  /* line 91, sass/partials/_front-page-widgets.scss */
   .one-third.front-page-middle-columns.column-one .entry-title a,
   .one-third.front-page-middle-columns.column-three .entry-title a {
     color: #fff; }
 
-/* line 105, sass/partials/_front-page-widgets.scss */
+/* line 98, sass/partials/_front-page-widgets.scss */
 .one-third.front-page-middle-columns.column-two .featured-content .entry {
   background: #fff;
   padding: 10px; }
-/* line 110, sass/partials/_front-page-widgets.scss */
+/* line 103, sass/partials/_front-page-widgets.scss */
 .one-third.front-page-middle-columns.column-two .entry-title a,
 .one-third.front-page-middle-columns.column-two .entry-title a:hover,
 .one-third.front-page-middle-columns.column-two .entry-content,
 .one-third.front-page-middle-columns.column-two .more-link {
   color: #002868; }
-/* line 117, sass/partials/_front-page-widgets.scss */
+/* line 110, sass/partials/_front-page-widgets.scss */
 .one-third.front-page-middle-columns.column-two .more-link {
   background: #002868;
   color: #fff;
   padding: 3px; }
-  /* line 122, sass/partials/_front-page-widgets.scss */
+  /* line 115, sass/partials/_front-page-widgets.scss */
   .one-third.front-page-middle-columns.column-two .more-link:hover {
     background: #CE1126; }
-/* line 127, sass/partials/_front-page-widgets.scss */
+/* line 120, sass/partials/_front-page-widgets.scss */
 .one-third.front-page-middle-columns.column-two p {
   margin: 0; }
 
@@ -1280,7 +1274,7 @@ Content Area
 /* line 4, sass/partials/_content-area.scss */
 .entry {
   margin-bottom: 40px;
-  padding: 50px 60px; }
+  padding: 0 60px; }
 
 /* line 9, sass/partials/_content-area.scss */
 .content .entry {
@@ -1305,52 +1299,60 @@ Content Area
 .entry-content code {
   background-color: #000;
   color: #ddd; }
+/* line 38, sass/partials/_content-area.scss */
+.entry-content .read-more {
+  background: #002868;
+  color: #fff;
+  padding: 5px 10px; }
+  /* line 43, sass/partials/_content-area.scss */
+  .entry-content .read-more:hover {
+    background: #CE1126; }
 
 /* Entry Meta
 --------------------------------------------- */
-/* line 42, sass/partials/_content-area.scss */
+/* line 52, sass/partials/_content-area.scss */
 p.entry-meta {
   font-size: 16px;
   margin-bottom: 0; }
 
-/* line 47, sass/partials/_content-area.scss */
+/* line 57, sass/partials/_content-area.scss */
 .entry-header h1 {
   color: #fff;
   font-family: Oswald, sans-serif; }
 
-/* line 52, sass/partials/_content-area.scss */
+/* line 62, sass/partials/_content-area.scss */
 .entry-header .entry-meta {
   margin-bottom: 24px; }
 
-/* line 56, sass/partials/_content-area.scss */
+/* line 66, sass/partials/_content-area.scss */
 .entry-footer .entry-meta {
   border-top: 2px solid #f5f5f5;
   padding-top: 24px; }
 
-/* line 61, sass/partials/_content-area.scss */
+/* line 71, sass/partials/_content-area.scss */
 .entry-categories,
 .entry-tags {
   display: block; }
 
-/* line 66, sass/partials/_content-area.scss */
+/* line 76, sass/partials/_content-area.scss */
 .entry-comments-link::before {
   content: "\2014";
   margin: 0 6px 0 2px; }
 
 /* Pagination
 --------------------------------------------- */
-/* line 74, sass/partials/_content-area.scss */
+/* line 84, sass/partials/_content-area.scss */
 .pagination {
   margin: 40px 0; }
 
-/* line 78, sass/partials/_content-area.scss */
+/* line 88, sass/partials/_content-area.scss */
 .adjacent-entry-pagination {
   margin-bottom: 0; }
 
-/* line 83, sass/partials/_content-area.scss */
+/* line 93, sass/partials/_content-area.scss */
 .archive-pagination li {
   display: inline; }
-/* line 87, sass/partials/_content-area.scss */
+/* line 97, sass/partials/_content-area.scss */
 .archive-pagination li a {
   background-color: #000;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
@@ -1359,14 +1361,14 @@ p.entry-meta {
   display: inline-block;
   font-size: 16px;
   padding: 8px 12px; }
-/* line 97, sass/partials/_content-area.scss */
+/* line 107, sass/partials/_content-area.scss */
 .archive-pagination li a:hover,
 .archive-pagination .active a {
   background-color: #e5554e; }
 
 /* Comments
 --------------------------------------------- */
-/* line 106, sass/partials/_content-area.scss */
+/* line 116, sass/partials/_content-area.scss */
 .comment-respond,
 .entry-comments,
 .entry-pings {
@@ -1374,58 +1376,58 @@ p.entry-meta {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px; }
 
-/* line 114, sass/partials/_content-area.scss */
+/* line 124, sass/partials/_content-area.scss */
 .comment-respond,
 .entry-pings {
   padding: 40px 40px 16px; }
 
-/* line 119, sass/partials/_content-area.scss */
+/* line 129, sass/partials/_content-area.scss */
 .entry-comments {
   padding: 40px; }
 
-/* line 123, sass/partials/_content-area.scss */
+/* line 133, sass/partials/_content-area.scss */
 .comment-header {
   font-size: 16px; }
 
-/* line 127, sass/partials/_content-area.scss */
+/* line 137, sass/partials/_content-area.scss */
 li.comment {
   background-color: #f5f5f5;
   border: 2px solid #fff;
   border-right: none; }
 
-/* line 133, sass/partials/_content-area.scss */
+/* line 143, sass/partials/_content-area.scss */
 .comment-content {
   clear: both;
   word-wrap: break-word; }
 
-/* line 139, sass/partials/_content-area.scss */
+/* line 149, sass/partials/_content-area.scss */
 .comment-list li {
   margin-top: 24px;
   padding: 32px; }
-/* line 144, sass/partials/_content-area.scss */
+/* line 154, sass/partials/_content-area.scss */
 .comment-list li li {
   margin-right: -32px; }
 
-/* line 149, sass/partials/_content-area.scss */
+/* line 159, sass/partials/_content-area.scss */
 .comment-respond input[type="email"],
 .comment-respond input[type="text"],
 .comment-respond input[type="url"] {
   width: 50%; }
 
-/* line 155, sass/partials/_content-area.scss */
+/* line 165, sass/partials/_content-area.scss */
 .comment-respond label {
   display: block;
   margin-right: 12px; }
 
-/* line 160, sass/partials/_content-area.scss */
+/* line 170, sass/partials/_content-area.scss */
 .entry-comments .comment-author {
   margin-bottom: 0; }
 
-/* line 164, sass/partials/_content-area.scss */
+/* line 174, sass/partials/_content-area.scss */
 .entry-pings .reply {
   display: none; }
 
-/* line 171, sass/partials/_content-area.scss */
+/* line 181, sass/partials/_content-area.scss */
 .form-allowed-tags {
   background-color: #f5f5f5;
   font-size: 16px;

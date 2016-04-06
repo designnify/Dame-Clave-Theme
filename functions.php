@@ -60,6 +60,46 @@ add_image_size( 'post-image-large', 320, 320, TRUE );
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
+//* Modify the WordPress read more link for automatic excerpts
+add_filter('excerpt_more', 'get_read_more_link');
+add_filter( 'the_content_more_link', 'get_read_more_link' );
+function get_read_more_link() {
+   return '...&nbsp;<a href="' . get_permalink() . '" class="read-more">[Lue&nbsp;lisää]</a>';
+}
+
+//* Modify the length of post excerpts
+add_filter( 'excerpt_length', 'sp_excerpt_length' );
+function sp_excerpt_length( $length ) {
+	return 50;
+}
+
+// Modify the WordPress read more link for hand-crafted excerpts
+add_filter('get_the_excerpt', 'wpm_manual_excerpt_read_more_link');
+function wpm_manual_excerpt_read_more_link($excerpt) {
+    $excerpt_more = '';
+    if (has_excerpt() && ! is_attachment() && get_post_type() == 'post') {
+        $excerpt_more = '&nbsp;<a href="' . get_permalink() . '" class="read-more">[Lue&nbsp;lisää]' . '</span></a>';
+    }
+    return $excerpt . $excerpt_more;
+}
+
+/* Code to Display Featured Image on top of the post */
+add_action( 'genesis_before_entry', 'featured_post_image', 8 );
+function featured_post_image() {
+  if ( ! is_singular( 'post' ) )  return;
+	the_post_thumbnail('post-image');
+}
+
+//* Remove the entry meta in the entry header
+remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );
+remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 );
+
+//* Remove the entry meta in the entry footer
+remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_open', 5 );
+remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
+remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_close', 15 );
+
 //* Customize the credits
 add_filter( 'genesis_footer_creds_text', 'sp_footer_creds_text' );
 function sp_footer_creds_text() {
@@ -68,34 +108,6 @@ function sp_footer_creds_text() {
 	echo date('Y');
 	echo ' &middot; Dame Clave';
 	echo '</p></div>';
-}
-
-//* Clean Markup Text Widget 
-add_action('widgets_init', create_function('', 'register_widget("clean_markup_widget");'));
-class Clean_Markup_Widget extends WP_Widget {
-	function __construct() {
-		parent::WP_Widget('clean_markup_widget', 'Clean markup widget', array('description'=>'Simple widget for well-formatted markup &amp; text'));
-	}
-	function widget($args, $instance) {
-		extract($args);
-		$markup = $instance['markup'];
-		//echo $before_widget;
-		if ($markup) echo $markup;
-		//echo $after_widget;
-	}
-	function update($new_instance, $old_instance) {
-		$instance = $old_instance;
-		$instance['markup'] = $new_instance['markup'];
-		return $instance;
-	}
-	function form($instance) {
-		if ($instance) $markup = esc_attr($instance['markup']);
-		else $markup = __('&lt;p&gt;Clean, well-formatted markup.&lt;/p&gt;', 'markup_widget'); ?>
-		<p>
-			<label for="<?php echo $this->get_field_id('markup'); ?>"><?php _e('Markup/text'); ?></label><br />
-			<textarea class="widefat" id="<?php echo $this->get_field_id('markup'); ?>" name="<?php echo $this->get_field_name('markup'); ?>" type="text" rows="16" cols="20" value="<?php echo $markup; ?>"><?php echo $markup; ?></textarea>
-		</p>
-<?php }
 }
 
 //* Register widget areas for home page
