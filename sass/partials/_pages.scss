@@ -129,12 +129,19 @@ table {
 
 /* Class description
 --------------------------------------------- */
-h3.accordion-header.accordion-default-colors {
+.single-faq.expand-faq {
 	background: $color-blue;
-	color: #fff;
+	border: 1px solid #ececec;
+	cursor: pointer;
+	padding: 5px 0 0 23px;
 	
 	&:hover {
 		background: $color-red;
+	}
+	
+	h2 {
 		color: #fff;
+		font-size: 25px;
+		font-size: 1.6rem;
 	}
 }

@@ -1548,13 +1548,19 @@ table {
 /* Class description
 --------------------------------------------- */
 /* line 132, sass/partials/_pages.scss */
-h3.accordion-header.accordion-default-colors {
+.single-faq.expand-faq {
   background: #002868;
-  color: #fff; }
-  /* line 136, sass/partials/_pages.scss */
-  h3.accordion-header.accordion-default-colors:hover {
-    background: #CE1126;
-    color: #fff; }
+  border: 1px solid #ececec;
+  cursor: pointer;
+  padding: 5px 0 0 23px; }
+  /* line 138, sass/partials/_pages.scss */
+  .single-faq.expand-faq:hover {
+    background: #CE1126; }
+  /* line 142, sass/partials/_pages.scss */
+  .single-faq.expand-faq h2 {
+    color: #fff;
+    font-size: 25px;
+    font-size: 1.6rem; }
 
 /*
 Sidebars
