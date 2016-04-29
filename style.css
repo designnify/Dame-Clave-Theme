@@ -1547,20 +1547,22 @@ table {
 
 /* Class description
 --------------------------------------------- */
-/* line 132, sass/partials/_pages.scss */
-.single-faq.expand-faq {
+/* line 134, sass/partials/_pages.scss */
+.single-faq.expand-faq h2 {
   background: #002868;
   border: 1px solid #ececec;
+  color: #fff;
   cursor: pointer;
-  padding: 5px 0 0 23px; }
-  /* line 138, sass/partials/_pages.scss */
-  .single-faq.expand-faq:hover {
+  font-size: 25px;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 5px 0 5px 23px; }
+  /* line 144, sass/partials/_pages.scss */
+  .single-faq.expand-faq h2:hover {
     background: #CE1126; }
-  /* line 142, sass/partials/_pages.scss */
-  .single-faq.expand-faq h2 {
-    color: #fff;
-    font-size: 25px;
-    font-size: 1.6rem; }
+/* line 149, sass/partials/_pages.scss */
+.single-faq.expand-faq .faq-answer {
+  padding: 5px 0 5px 23px; }
 
 /*
 Sidebars
