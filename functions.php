@@ -36,6 +36,7 @@ add_filter('widget_text', 'do_shortcode');
 add_theme_support( 'genesis-footer-widgets', 2 );
 
 //* Add support for custom header
+/*
 add_theme_support( 'custom-header', array(
 	'header_image'    => '',
 	'header-selector' => '.site-title a',
@@ -43,6 +44,7 @@ add_theme_support( 'custom-header', array(
 	'height'          => 160,
 	'width'           => 175,
 ) );
+*/
 
 //* Activate the use of Dashicons
  add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
