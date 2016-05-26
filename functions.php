@@ -35,17 +35,6 @@ add_filter('widget_text', 'do_shortcode');
 //* Add support for 2-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 2 );
 
-//* Add support for custom header
-/*
-add_theme_support( 'custom-header', array(
-	'header_image'    => '',
-	'header-selector' => '.site-title a',
-	'header-text'     => false,
-	'height'          => 160,
-	'width'           => 175,
-) );
-*/
-
 //* Activate the use of Dashicons
  add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
 function load_dashicons_front_end() {
