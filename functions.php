@@ -29,9 +29,6 @@ add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list'
 //* Add viewport meta tag for mobile browsers
 add_theme_support( 'genesis-responsive-viewport' );
 
-//* Add support for custom background
-// add_theme_support( 'custom-background' );
-
 //* Enable shortcodes in widgets
 add_filter('widget_text', 'do_shortcode');
 
@@ -83,7 +80,7 @@ function wpm_manual_excerpt_read_more_link($excerpt) {
     return $excerpt . $excerpt_more;
 }
 
-/* Code to Display Featured Image on top of the post */
+/* Display Featured Image on top of the post */
 add_action( 'genesis_before_entry', 'featured_post_image', 8 );
 function featured_post_image() {
   if ( ! is_singular( 'post' ) )  return;
@@ -151,27 +148,6 @@ if ( ! is_home() )
 		'after'		=> '</div></section>',
 		));
 }
-/*
-add_action( 'genesis_after_header', 'dame_clave_front_page_top_genesis' );
-function dame_clave_front_page_top_genesis() {
-	if ( ! is_home() )
-		return;
-	if ( ! is_home( 'front-page-top-left' ) || ( 'front-page-top-right' ) ) {
-		echo '<section class="front-page-top"><div class="wrap">';
-		
-		   genesis_widget_area( 'front-page-top-left', array(
-		       'before' => '<div class="one-half first front-page-top-left">',
-		       'after'		=> '</div>',
-		   ) );
-	
-		   genesis_widget_area( 'front-page-top-right', array(
-		       'before' => '<div class="one-half front-page-top-right">',
-		       'after'		=> '</div>',
-		   ) );
-		echo '</div></section>';
-	}
-}
-*/
 add_action( 'genesis_after_header', 'dame_clave_front_page_middle_genesis' );
 function dame_clave_front_page_middle_genesis() {
 	if ( ! is_home() )
